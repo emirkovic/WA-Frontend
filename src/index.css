@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+code {
+    font-family: 'Ariel', monospace;
+  }
+  
+.input {
+    border: none;
+    border-bottom: 2px solid #a0a0a0;
+    font-size: 1.1em;
+    color: #4b4141;
+    padding: 12px;
+    padding-left: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+.btn {
+    background-color: #2c94e1;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 12px 26px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+
+.btn-2 {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
