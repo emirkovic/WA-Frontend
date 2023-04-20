@@ -2,7 +2,7 @@
 
 1. Clone the repository:
 
-          git clone https://github.com/FilipK19/WA-Projekt-Frontend.git
+          git clone https://github.com/emirkovic/WA-Frontend.git
           
 2. Install NPM packages:
 
