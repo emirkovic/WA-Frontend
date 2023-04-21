@@ -80,9 +80,7 @@ function saveQuiz() {
   return (
     <div className="create-quiz-wrapper">
       <Toast model={showToast} message="Kviz Created" />
-      <div>
         <Sidebar />
-      </div>
       <div className="main">
         <div className="header">Napravi Kviz</div>
         <div className="form card">
@@ -126,7 +124,7 @@ function saveQuiz() {
           <div className="add-answer" onClick={addAnswer}> Dodaj odgovor </div>
           <div className="btn-wrapper">
             <div className="btn" onClick={() => setAddQuestion(false)}> Close </div>
-            <div className="btn" onClick={saveQuestion}>Save</div>
+            <div className="btn" onClick={saveQuestion}> Save </div>
                       </div>
                    </div>
                 </Dialog>

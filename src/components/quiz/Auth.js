@@ -59,7 +59,7 @@ function Auth(props) {
     <div className="auth-wrapper">
       <Toast model={showToast} message="Incorrect login" backgroundColor="#FF4539" />
       <div className="left">
-        <img src="https://freesvg.org/img/chemist.png" alt="Kviz" />
+        <img src="https://freesvg.org/img/chemist.png" alt=""/>
       </div>
 
       <div className="right">
@@ -67,7 +67,7 @@ function Auth(props) {
         <div className="sub-header">Welcome to Kviz Aplikacija</div>
         {page}
         <div className="new" onClick={changeTab}>
-          {tab === 'signin' ? 'Novi korisnik? Prijavite se ovdje' : 'Vec imate profil? Logirajte se ovdje'}
+          {tab === 'signin' ? 'Novi korisnik? Registrirajte se ovdje' : 'Vec imate profil? Logirajte se ovdje'}
         </div>
       </div>
     </div>

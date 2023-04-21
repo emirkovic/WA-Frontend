@@ -43,7 +43,7 @@ function CommunityQuizzes(props) {
                 <div className="quizzes-wrapper">
                     {quizzes.map((quiz, idx) => (
                         <div key={idx} className="quiz-card card">
-                            <img src={quiz.imgUrl || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTSZhA70noK1wworcCoSC9zEV5VjK3ouoqA&usqp=CAU"} alt="Community Kviz" />
+                            <img src={quiz.imgUrl || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTSZhA70noK1wworcCoSC9zEV5VjK3ouoqA&usqp=CAU"} alt="" />
                             <div className="quiz-name">{quiz.name}</div>
                             <div className="category">{quiz.category}</div>
                             <div className="questions">{quiz.questions.length} Pitanja </div>

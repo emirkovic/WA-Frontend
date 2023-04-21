@@ -28,7 +28,10 @@ function Profile(props) {
 
     const handleFileInputChange = e => {
         const file = e.target.files[0];
-        if(!fileTypes.includes(file.type)) {
+        if (!file) {         
+            return;
+        }
+        if (!fileTypes.includes(file.type)) {
             setMessage('Mora biti jpg, pdf, or png');
         } else {
             setMessage('');
@@ -53,29 +56,29 @@ function Profile(props) {
         if (message.length > 0 || !previewSource || !user._id) {
           return;
         }
-        axios.post('/api/users/upload-image', JSON.stringify({
-          data: previewSource,
-          _id: user._id
-        })).then((res) => {
-          const success = !!(res.data && res.data.message);
-          setMessage(success ? 'Success' : '');
-          setPreviewSource('');
-          setShowToast(true);
-          getUser();
-        }).catch((err) => {
-          console.log(err);
-          setMessage('Pogreska u postavljanju slike');
-          setShowToast(true);
-        })
+        axios
+          .post('/api/users/upload-image', {
+            data: previewSource,
+            _id: user._id,
+          })
+          .then((res) => {
+            const success = !!(res.data && res.data.message);
+            setMessage(success ? 'Success' : '');
+            setPreviewSource('');
+            setShowToast(true);
+            getUser();
+          })
+          .catch((err) => {
+            console.log(err);
+            setMessage('Pogreska u postavljanju slike');
+            setShowToast(true);
+          });
       }
 
     return (
         <div className="profile-wrapper">
             <Toast model={showToast} messsage={message} />
-            <div>
                 <Sidebar />
-            </div>
-
             <div className="body">
                 {user &&
                     <div className="cards">

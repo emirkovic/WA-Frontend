@@ -41,9 +41,7 @@ function ViewResults(props) {
     
     return (
         <div className="view-results-wrapper">
-            <div>
                 <Sidebar/>
-            </div>
             {(quiz && result) && 
                 <div className="body">
                     <div className="header"> Kviz Rezultati </div>

@@ -69,12 +69,7 @@ function ViewQuiz(props) {
                     <div className="description">{quiz.description}</div>
                     <div className="comments">
                       {quiz.comments.map((com, idx) => (
-                        <div className="comment" key={idx}>
-                          <img
-                            style={{ borderRadius: "100%" }}
-                            className="img"
-                            src="https://img.freepik.com/premium-vector/quiz-time_690577-160.jpg?w=2000" alt="View Kviz"
-                          />
+                        <div className="comment" key={idx}>                        
                           <div>{com.message}</div>
                           <div>{com.sentFromName}</div>
                         </div>
