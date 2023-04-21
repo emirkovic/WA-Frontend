@@ -30,8 +30,7 @@ function MyQuizzes(props) {
                             <div className="category">{quiz.category}</div>
                             <div className="questions">{quiz.questions.length} Pitanja</div>
                             <div className="take-quiz btn" onClick={() => takeQuiz(quiz._id)}>Odradi Kviz</div>
-                            <div className="top-section">
-                                <div className="views" img style={{  padding: '5px', width: '20px', height: '20px' }}>{quiz.views} <img src="https://icon-library.com/images/black-eye-icon/black-eye-icon-19.jpg" alt="Views" /> </div>
+                            <div className="top-section">                                
                                 <div className="likes" img style={{  padding: '5px', width: '20px', height: '20px' }}>{quiz.likes} <img src="https://www.pngall.com/wp-content/uploads/5/Like-Button-PNG.png" alt="Likes" /></div>
                             </div>
                         </div>
